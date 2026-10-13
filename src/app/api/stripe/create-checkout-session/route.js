@@ -7,6 +7,15 @@ const secretKey = process.env.STRIPE_SECRET_KEY;
 const stripe = secretKey ? new Stripe(secretKey) : null;
 
 const trustedInvoices = {
+  
+"INV-1049": {
+  amount: 651488,
+  clientId: "client-006",
+  clientName: "Verified Client 006",
+  description: "Invoice INV-1049",
+  status: "pending",
+},
+
   "INV-1048": {
     amount: 18500,
     clientId: "client-001",
